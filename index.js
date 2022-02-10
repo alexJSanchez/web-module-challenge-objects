@@ -161,10 +161,16 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
+ function getReviewByRating(myArray,ratingNum) {
+    let secondArray = [];
+    for (let i = 0;i < myArray.length;i++){
+      if (myArray[i].rating === ratingNum){
+        secondArray.push(myArray[i]);
+        return secondArray;
+      }
+    }
   }
-
+console.log(getReviewByRating(reviews,4));
   
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪💪   
 Use the getLongReviews function below to do the following:
